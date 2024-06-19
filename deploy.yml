@@ -5,7 +5,7 @@ metadata:
     app: swiggy
   name: swiggy-deploy
 spec:
-  replicas: 6
+  replicas: 3
   selector:
     matchLabels:
       app: swiggy
@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: cont1
-        image: rahamshaik/trainservice:latest
+        image: divyaap9/paytmmovies:latest
         ports:
           - containerPort: 80
 ---
